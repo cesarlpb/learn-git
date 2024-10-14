@@ -1,0 +1,6 @@
+1. Crear cuenta de GitHub
+2. Crear repositorio
+2.5 Añadir llave SSH -> ssh-keygen
+3. git clone <URL del repositorio>
+4. Subid un cambio -> git push
+5. Visualizar cambio en Github
