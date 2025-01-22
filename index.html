@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Provincias de España</title>
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/learn-git/assets/bandera_de_espanya_multicural-_RHPwW5M.png"
+      type="image/x-icon"
+    />
+    <!-- estilos básicos -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      #app {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+      }
+      .provincia {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        max-width: 350px;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        border-radius: 5px;
+        max-width: 250px;
+        max-height: 250px;
+        object-fit: cover;
+      }
+    </style>
+    <script type="module" crossorigin src="/learn-git/assets/index-az2Fe5Gj.js"></script>
+  </head>
+  <body>
+    <h1>Las provincias de España:</h1>
+    <div id="app">
+      <div v-for="provincia in provincias" :key="provincia.id">
+        <provincia-display
+          :provincia="provincia"
+          class="provincia"
+        ></provincia-display>
+      </div>
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+    <!-- import Components -->
+    <script src="./components/ProvinciaDisplay.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+</html>
