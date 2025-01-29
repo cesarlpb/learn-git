@@ -5,3 +5,6 @@ soluciones/02
 soluciones/03
 soluciones/04
 soluciones/05
+soluciones/06
+# regla que engloba todas las carpetas de 1 dígito que empiezan por 0
+soluciones/0* 
